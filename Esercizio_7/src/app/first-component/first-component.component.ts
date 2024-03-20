@@ -9,4 +9,13 @@ import { Component } from '@angular/core';
 })
 export class FirstComponentComponent {
 
+  clickBottone(link: string){
+    window.open(link);
+  }
+
+  pokemon = [
+
+  {}
+
+  ]
 }
