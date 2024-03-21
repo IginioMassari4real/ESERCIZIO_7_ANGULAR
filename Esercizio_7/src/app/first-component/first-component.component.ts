@@ -16,12 +16,11 @@ export class FirstComponentComponent {
 
   pokemon = [
 
-  {nome:"PIKACHU" },
+  {nome:"CHESPIN" },
 
-  {nome:"CHARIZARD" },
+  {nome:"FENNEKIN" },
 
-  {nome:"SQUIRTLE" },
-
+  {nome:"FROAKIE" },
 
   ]
 }
