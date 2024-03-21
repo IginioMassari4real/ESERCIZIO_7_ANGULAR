@@ -1,9 +1,10 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-first-component',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './first-component.component.html',
   styleUrl: './first-component.component.css'
 })
@@ -15,7 +16,12 @@ export class FirstComponentComponent {
 
   pokemon = [
 
-  {}
+  {nome:"PIKACHU" },
+
+  {nome:"CHARIZARD" },
+
+  {nome:"SQUIRTLE" },
+
 
   ]
 }

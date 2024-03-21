@@ -4,9 +4,7 @@
 <h1 align="center" style="color: blue; margin-left:auto; margin-right:auto">GIOCO POKEMON</h1> 
 <h3 align="center" style="color: blueviolet; margin-left:auto; margin-right:auto">:(((</h3>
 <img class="h-12 w-12 flex-none rounded-full bg-gray-50" style="width: 900px; margin-left: 21%; margin-right: 25%; " src="https://www.salvatorepumo.it/wp-content/uploads/2023/10/logo-pokemon-oggi.jpg" alt="">
-<button target="_blank" class="button1" style="color: white; width: 200px; margin-left: 9%;">INFO GIOCATORE</button> 
-<button target="_blank" class="button2" style="color: white; width: 200px; margin-left: 32%;">INFO GIOCATORE</button> 
-<button target="_blank" class="button3" style="color: white; width: 200px; margin-left: 55%;">INFO GIOCATORE</button> 
-<button target="_blank" class="button4" style="color: white; width: 200px; margin-left: 78%;">INFO GIOCATORE</button> 
+<div class="card" style="width:400px;">
+<button *ngFor="let element of pokemon" target="_blank" class="button1" style="color: white; width: 200px; margin-left: 24%;">{{element.nome}}</button> 
 </div>
 
