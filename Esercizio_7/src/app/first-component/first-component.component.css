@@ -1,21 +1,28 @@
 .button1{
     position: absolute;
-    top: 80%;
+    top: 90%;
     background-color: blue;
-    border: none;
+    border: solid;
     border-radius: 10px;
 }
 .button2{
     position: absolute;
     top: 90%;
     background-color: red;
-    border: none;
+    border: solid;
     border-radius: 10px;
 }
 .button3{
     position: absolute;
     top: 90%;
     background-color: black;
-    border: none;
+    border: solid;
+    border-radius: 10px;
+}
+.button4{
+    position: absolute;
+    top: 80%;
+    background-color: green;
+    border: solid;
     border-radius: 10px;
 }

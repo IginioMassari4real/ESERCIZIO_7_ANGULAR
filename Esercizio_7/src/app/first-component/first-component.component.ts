@@ -16,11 +16,11 @@ export class FirstComponentComponent {
 
   pokemon = [
 
-  {nome:"CHESPIN" },
+  {nome:"STARYU", immagine:"https://media.pokemoncentral.it/wiki/5/52/Artwork0120_RFVF.png", colore:"blu"},
 
-  {nome:"FENNEKIN" },
+  {nome:"ARON", immagine:"https://media.pokemoncentral.it/wiki/thumb/9/90/Artwork0304_RZ.png/300px-Artwork0304_RZ.png", colore:"rosso" },
 
-  {nome:"FROAKIE" },
+  {nome:"SAWK", immagine:"https://media.pokemoncentral.it/wiki/thumb/a/a9/Artwork0539_NB.png/300px-Artwork0539_NB.png", colore:"nero"},
 
   ]
 }
