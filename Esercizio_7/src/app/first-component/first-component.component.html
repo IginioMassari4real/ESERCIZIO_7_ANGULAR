@@ -1,16 +1,131 @@
 <link href="https://cdn.jsdelivr.net/npm/tailwindcss2.2.19/dist/tailwind.min.css" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" rel="stylesheet">
-<div class="container">
 <h1 align="center" style="color: blue; margin-left:auto; margin-right:auto;">POKEMON X (2013)</h1> 
 <h3 align="center" style="color: blue; margin-left:auto; margin-right:auto">La regione nel gioco Pokémon X è chiamata Kalos ed è ispirata alla Francia. Kalos è conosciuta per la sua bellezza architettonica e la sua ricca cultura, con influenze sia moderne che storiche. La regione è divisa in diverse aree geografiche, tra cui città, foreste, montagne e persino una vasta area marina. I giocatori esplorano Kalos mentre affrontano sfide, sconfiggono i capipalestra e partecipano al Pokémon League per diventare il Campione della regione.</h3>
-<img class="h-12 w-12 flex-none rounded-full bg-gray-50" style="width: 400px; margin-left: 37%; margin-right: 25%; " src="https://media.pokemoncentral.it/wiki/thumb/5/55/Pok%C3%A9mon_X_Box_EU.png/300px-Pok%C3%A9mon_X_Box_EU.png" alt="">
-<div class="card" style="width:400px" *ngFor="let element of pokemon, index as i">
-<button target="_blank" class="button1" (click)="clickBottone(element.tipo)" style="color: white; width: 200px; margin-left: 13%;">#120 STARYU</button> 
-<button target="_blank" class="button2" (click)="clickBottone(element.tipo)" style="color: white; width: 200px; margin-left: 44%;">#304 ARON</button> 
-<button target="_blank" class="button3" (click)="clickBottone(element.tipo)" style="color: white; width: 200px; margin-left: 75%;">#539 SAWK</button> 
-<button target="_blank" class="button4" style="color: white; width: 200px; margin-left: 44%;">HOME</button> 
-<img class="h-12 w-12 flex-none rounded-full bg-gray-50" style="width: 400px; margin-left: 25%; margin-right: 25%; margin-top: 160px; " src="https://media.pokemoncentral.it/wiki/5/52/Artwork0120_RFVF.png" alt="">
-<img class="h-12 w-12 flex-none rounded-full bg-gray-50" style="width: 400px; margin-left: 140%; margin-right: 25%; margin-top: -380px; " src="https://media.pokemoncentral.it/wiki/thumb/9/90/Artwork0304_RZ.png/300px-Artwork0304_RZ.png" alt="">
-<img class="h-12 w-12 flex-none rounded-full bg-gray-50" style="width: 400px; margin-left: 255%; margin-right: 25%; margin-top: -450px;" src="https://media.pokemoncentral.it/wiki/thumb/a/a9/Artwork0539_NB.png/300px-Artwork0539_NB.png" alt="">
+<img class="h-12 w-12 flex-none rounded-full bg-gray-50" style="width: 400px; margin-left: 37%; margin-right: auto; " src="https://media.pokemoncentral.it/wiki/thumb/5/55/Pok%C3%A9mon_X_Box_EU.png/300px-Pok%C3%A9mon_X_Box_EU.png" alt="">
+<br>
+<br>
+<br>
+
+<ng-template *ngIf = "name === 'inizio'; then bloccoInizio"></ng-template>
+
+
+<ng-template #bloccoInizio>
+    <div class="container-fluid">
+        <div class="row">
+            <div *ngFor="let element of pokemon index as i" class="col-md-4">
+            <div class="card mb-4">
+                <img class="card-img-top" src="{{element.immagine}}" alt="Card image">
+                <div class="card-body">
+                    <br>
+                    <br> 
+                    <br>
+                    <button (click) = "setBtn(element.nome)"type="button" class="btn button1" style="margin-left: 168px; margin-right: 30px; font-family: Arial, Helvetica, sans-serif;" [ngClass]="{'button1':pokemon[i].nome=='#120 STARYU', 'button2':pokemon[i].nome=='#304 ARON', 'button3':pokemon[i].nome=='#539 SAWK' }">{{element.nome}}</button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+</ng-template>
+<!--<button target="_blank" class="button1" (click)="clickBottone(element.tipo)" style="color: white; width: 200px; margin-left: 13%;">#120 STARYU</button> -->
+<ng-template *ngIf = "name === '#120 STARYU'; then bloccoUno"></ng-template>
+
+
+<ng-template #bloccoUno>
+
+ 
+    <div class="container" style="width: 400px;">
+        <div class="card mb-5">
+            <img class="card-img-top" src="{{pokemon[0].immagine}}" alt="Card image">
+            <div class="card-body" style="font-family: Arial, Helvetica, sans-serif; color: blue;" >
+                <p>nome: {{pokemon[0].nome}}</p>
+                <p>tipo: {{pokemon[0].tipo}} </p>
+                <p>peso: {{pokemon[0].peso}} </p>
+                <p>altezza: {{pokemon[0].altezza}} </p>
+                <p>dove trovarlo?: {{pokemon[0].posizione}} </p>
+                <p>tasso di cattura: {{pokemon[0].tassocattura}} </p>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <a  href="reload()"class="btn button4" style="color: white; width: 200px; margin-left: 19%;">HOME</a> 
+            </div>
+    </div>
 </div>
+<br>
+
+
+</ng-template>
+<ng-template *ngIf = "name === '#304 ARON'; then bloccoDue"></ng-template>
+
+
+<ng-template #bloccoDue>
+
+    <div class="container" style="width: 400px;">
+        <div class="card mb-5">
+            <img class="card-img-top" src="{{pokemon[1].immagine}}" alt="Card image">
+            <div class="card-body" style="font-family: Arial, Helvetica, sans-serif; color: blue;" >
+                <p>nome: {{pokemon[1].nome}}</p>
+                <p>tipo: {{pokemon[1].tipo}} </p>
+                <p>peso: {{pokemon[1].peso}} </p>
+                <p>altezza: {{pokemon[1].altezza}} </p>
+                <p>dove trovarlo?: {{pokemon[1].posizione}} </p>
+                <p>tasso di cattura: {{pokemon[1].tassocattura}} </p>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+    
+                <a  href="reload()"class="btn button4" style="color: white; width: 200px; margin-left: 19%;">HOME</a> 
+            </div>
+    </div>
+    </div>
+    <br>
+
+
+</ng-template>
+<ng-template *ngIf = "name === '#539 SAWK'; then bloccoTre"></ng-template>
+
+
+<ng-template #bloccoTre>
+    <div class="container" style="width: 400px;">
+        <div class="card mb-5">
+            <img class="card-img-top" src="{{pokemon[2].immagine}}" alt="Card image">
+            <div class="card-body" style="font-family: Arial, Helvetica, sans-serif; color: blue;" >
+                <p>nome: {{pokemon[2].nome}}</p>
+                <p>tipo: {{pokemon[2].tipo}} </p>
+                <p>peso: {{pokemon[2].peso}} </p>
+                <p>altezza: {{pokemon[2].altezza}} </p>
+                <p>dove trovarlo?: {{pokemon[2].posizione}} </p>
+                <p>tasso di cattura: {{pokemon[2].tassocattura}} </p>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+    
+                <a  href="reload()"class="btn button4" style="color: white; width: 200px; margin-left: 19%;">HOME</a> 
+            </div>
+    </div>
+    </div>
+    <br>
+    
+    
+    
+
+
+</ng-template>
+
+
 
