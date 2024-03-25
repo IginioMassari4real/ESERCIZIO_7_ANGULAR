@@ -1,8 +1,7 @@
 <link href="https://cdn.jsdelivr.net/npm/tailwindcss2.2.19/dist/tailwind.min.css" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" rel="stylesheet">
-<h1 align="center" style="color: blue; margin-left:auto; margin-right:auto;">POKEMON X (2013)</h1> 
-<h3 align="center" style="color: blue; margin-left:auto; margin-right:auto">La regione nel gioco Pokémon X è chiamata Kalos ed è ispirata alla Francia. Kalos è conosciuta per la sua bellezza architettonica e la sua ricca cultura, con influenze sia moderne che storiche. La regione è divisa in diverse aree geografiche, tra cui città, foreste, montagne e persino una vasta area marina. I giocatori esplorano Kalos mentre affrontano sfide, sconfiggono i capipalestra e partecipano al Pokémon League per diventare il Campione della regione.</h3>
-<img class="h-12 w-12 flex-none rounded-full bg-gray-50" style="width: 400px; margin-left: 37%; margin-right: auto; " src="https://media.pokemoncentral.it/wiki/thumb/5/55/Pok%C3%A9mon_X_Box_EU.png/300px-Pok%C3%A9mon_X_Box_EU.png" alt="">
+<img class="h-12 w-12 flex-none rounded-full bg-gray-50" style="width: 1000px; margin-left: 18%; margin-right: auto; " src="../../assets/png-transparent-pokemon-x-and-y-pokemon-x-pokemon-ultra-sun-and-ultra-moon-pokemon-sun-and-moon-nintendo-3ds-pokxe9mon-x-and-y-text-logo-nintendo-removebg-preview.png" alt="">
+<h2 align="center" style="color: blue; margin-left:auto; margin-right:auto; font-family: POKEMON;">La regione nel gioco Pokémon X è chiamata Kalos ed è ispirata alla Francia. Kalos è conosciuta per la sua bellezza architettonica e la sua ricca cultura, con influenze sia moderne che storiche. La regione è divisa in diverse aree geografiche, tra cui città, foreste, montagne e persino una vasta area marina. I giocatori esplorano Kalos mentre affrontano sfide, sconfiggono i capipalestra e partecipano al Pokémon League per diventare il Campione della regione.</h2>
 <br>
 <br>
 <br>
@@ -20,7 +19,7 @@
                     <br>
                     <br> 
                     <br>
-                    <button (click) = "setBtn(element.nome)"type="button" class="btn button1" style="margin-left: 168px; margin-right: 30px; font-family: Arial, Helvetica, sans-serif;" [ngClass]="{'button1':pokemon[i].nome=='#120 STARYU', 'button2':pokemon[i].nome=='#304 ARON', 'button3':pokemon[i].nome=='#539 SAWK' }">{{element.nome}}</button>
+                    <button (click) = "setBtn(element.nome)"type="button" class="btn button1" style="margin-left: 168px; margin-right: 30px; font-family: POKEMON" [ngClass]="{'button1':pokemon[i].nome=='#120 STARYU', 'button2':pokemon[i].nome=='#304 ARON', 'button3':pokemon[i].nome=='#539 SAWK' }">{{element.nome}}</button>
                 </div>
             </div>
         </div>
@@ -39,7 +38,7 @@
     <div class="container" style="width: 400px;">
         <div class="card mb-5">
             <img class="card-img-top" src="{{pokemon[0].immagine}}" alt="Card image">
-            <div class="card-body" style="font-family: Arial, Helvetica, sans-serif; color: blue;" >
+            <div class="card-body" style="font-family: POKEMON; color: blue;" >
                 <p>nome: {{pokemon[0].nome}}</p>
                 <p>tipo: {{pokemon[0].tipo}} </p>
                 <p>peso: {{pokemon[0].peso}} </p>
@@ -53,7 +52,7 @@
                 <br>
                 <br>
                 <br>
-
+                <br>
                 <a  href="reload()"class="btn button4" style="color: white; width: 200px; margin-left: 19%;">HOME</a> 
             </div>
     </div>
@@ -70,7 +69,7 @@
     <div class="container" style="width: 400px;">
         <div class="card mb-5">
             <img class="card-img-top" src="{{pokemon[1].immagine}}" alt="Card image">
-            <div class="card-body" style="font-family: Arial, Helvetica, sans-serif; color: blue;" >
+            <div class="card-body" style="font-family: POKEMON; color: blue;" >
                 <p>nome: {{pokemon[1].nome}}</p>
                 <p>tipo: {{pokemon[1].tipo}} </p>
                 <p>peso: {{pokemon[1].peso}} </p>
@@ -84,7 +83,7 @@
                 <br>
                 <br>
                 <br>
-    
+                <br>
                 <a  href="reload()"class="btn button4" style="color: white; width: 200px; margin-left: 19%;">HOME</a> 
             </div>
     </div>
@@ -100,7 +99,7 @@
     <div class="container" style="width: 400px;">
         <div class="card mb-5">
             <img class="card-img-top" src="{{pokemon[2].immagine}}" alt="Card image">
-            <div class="card-body" style="font-family: Arial, Helvetica, sans-serif; color: blue;" >
+            <div class="card-body" style="font-family: POKEMON; color: blue;" >
                 <p>nome: {{pokemon[2].nome}}</p>
                 <p>tipo: {{pokemon[2].tipo}} </p>
                 <p>peso: {{pokemon[2].peso}} </p>
@@ -114,7 +113,7 @@
                 <br>
                 <br>
                 <br>
-    
+                <br>
                 <a  href="reload()"class="btn button4" style="color: white; width: 200px; margin-left: 19%;">HOME</a> 
             </div>
     </div>

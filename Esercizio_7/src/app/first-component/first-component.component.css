@@ -26,3 +26,7 @@
     border: solid;
     border-radius: 10px;
 }
+@font-face {
+    font-family: POKEMON;
+    src: url(../../assets/Pokemon\ Solid.ttf);
+  }
