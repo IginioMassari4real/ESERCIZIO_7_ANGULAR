@@ -5,6 +5,7 @@
 <br>
 <br>
 <br>
+<br>
 
 <ng-template *ngIf = "name === 'inizio'; then bloccoInizio"></ng-template>
 
@@ -13,6 +14,9 @@
         <div class="row">
             <div *ngFor="let element of pokemon index as i" class="col-md-4">
             <div class="card mb-4">
+                <h1 align="center" style="color: blue; margin-left:auto; margin-right:auto; font-family: POKEMON;">{{element.starter}}</h1>
+                <br>
+                <br>
                 <img class="card-img-top" src="{{element.immagine}}" alt="Card image">
                 <div class="card-body">
                     <br>
@@ -29,9 +33,12 @@
 <ng-template *ngIf = "name === '#120 STARYU'; then bloccoUno"></ng-template>
 
 <ng-template #bloccoUno>
- 
+
     <div class="container" style="width: 400px;">
         <div class="card mb-5">
+            <h1 align="center" style="color: blue; margin-left:auto; margin-right:auto; font-family: POKEMON;">{{pokemon[0].starter}}</h1>
+            <br>
+            <br>
             <img class="card-img-top" src="{{pokemon[0].immagine}}" alt="Card image">
             <div class="card-body" style="font-family: POKEMON; color: blue;" >
                 <p>- NOME: {{pokemon[0].nome}}</p>
@@ -59,6 +66,7 @@
                 <br>
                 <br>
                 <br>
+                <br>
                 <a  href="reload()"class="btn button4" style="color: white; width: 200px; margin-left: 19%;">HOME</a> 
             </div>
     </div>
@@ -72,6 +80,9 @@
 
     <div class="container" style="width: 400px;">
         <div class="card mb-5">
+            <h1 align="center" style="color: blue; margin-left:auto; margin-right:auto; font-family: POKEMON;">{{pokemon[1].starter}}</h1>
+            <br>
+            <br>
             <img class="card-img-top" src="{{pokemon[1].immagine}}" alt="Card image">
             <div class="card-body" style="font-family: POKEMON; color: blue;" >
                 <p>- NOME: {{pokemon[1].nome}}</p>
@@ -99,6 +110,7 @@
                 <br>
                 <br>
                 <br>
+                <br>
                 <a  href="reload()"class="btn button4" style="color: white; width: 200px; margin-left: 19%;">HOME</a> 
             </div>
     </div>
@@ -111,6 +123,9 @@
 <ng-template #bloccoTre>
     <div class="container" style="width: 400px;">
         <div class="card mb-5">
+            <h1 align="center" style="color: blue; margin-left:auto; margin-right:auto; font-family: POKEMON;">{{pokemon[2].starter}}</h1>
+            <br>
+            <br>
             <img class="card-img-top" src="{{pokemon[2].immagine}}" alt="Card image">
             <div class="card-body" style="font-family: POKEMON; color: blue;" >
                 <p>- NOME: {{pokemon[2].nome}}</p>
@@ -126,6 +141,7 @@
                 <p>- ATTACCO: {{pokemon[2].attacco}}</p>
                 <p>- DIFESA: {{pokemon[2].difesa}}</p>
                 <p>- VELOCITA': {{pokemon[2].velocita}}</p>
+                <br>
                 <br>
                 <br>
                 <br>
