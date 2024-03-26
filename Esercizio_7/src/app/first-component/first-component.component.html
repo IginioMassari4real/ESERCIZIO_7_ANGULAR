@@ -8,7 +8,6 @@
 
 <ng-template *ngIf = "name === 'inizio'; then bloccoInizio"></ng-template>
 
-
 <ng-template #bloccoInizio>
     <div class="container-fluid">
         <div class="row">
@@ -26,13 +25,10 @@
         </div>
     </div>
 
-
 </ng-template>
 <ng-template *ngIf = "name === '#120 STARYU'; then bloccoUno"></ng-template>
 
-
 <ng-template #bloccoUno>
-
  
     <div class="container" style="width: 400px;">
         <div class="card mb-5">
@@ -46,6 +42,13 @@
                 <p>- abilità: {{pokemon[0].abilita}}</p>
                 <p>- dove trovarlo?: {{pokemon[0].posizione}} </p>
                 <p>- tasso di cattura: {{pokemon[0].tassocattura}} </p>
+                <p>- debolezze: {{pokemon[0].debolezze}}</p>
+                <p>- resistenze: {{pokemon[0].resistenze}}</p>
+                <p>- attacco: {{pokemon[0].attacco}}</p>
+                <p>- difesa: {{pokemon[0].difesa}}</p>
+                <p>- velocità: {{pokemon[0].velocita}}</p>
+                <br>
+                <br>
                 <br>
                 <br>
                 <br>
@@ -62,10 +65,8 @@
 </div>
 <br>
 
-
 </ng-template>
 <ng-template *ngIf = "name === '#304 ARON'; then bloccoDue"></ng-template>
-
 
 <ng-template #bloccoDue>
 
@@ -81,6 +82,13 @@
                 <p>- abilità: {{pokemon[1].abilita}}</p>
                 <p>- dove trovarlo?: {{pokemon[1].posizione}} </p>
                 <p>- tasso di cattura: {{pokemon[1].tassocattura}} </p>
+                <p>- debolezze: {{pokemon[1].debolezze}}</p>
+                <p>- resistenze: {{pokemon[1].resistenze}}</p>
+                <p>- attacco: {{pokemon[1].attacco}}</p>
+                <p>- difesa: {{pokemon[1].difesa}}</p>
+                <p>- velocità: {{pokemon[1].velocita}}</p>
+                <br>
+                <br>
                 <br>
                 <br>
                 <br>
@@ -97,10 +105,8 @@
     </div>
     <br>
 
-
 </ng-template>
 <ng-template *ngIf = "name === '#539 SAWK'; then bloccoTre"></ng-template>
-
 
 <ng-template #bloccoTre>
     <div class="container" style="width: 400px;">
@@ -115,6 +121,13 @@
                 <p>- abilità: {{pokemon[2].abilita}}</p>
                 <p>- dove trovarlo?: {{pokemon[2].posizione}} </p>
                 <p>- tasso di cattura: {{pokemon[2].tassocattura}} </p>
+                <p>- debolezze: {{pokemon[2].debolezze}}</p>
+                <p>- resistenze: {{pokemon[2].resistenze}}</p>
+                <p>- attacco: {{pokemon[2].attacco}}</p>
+                <p>- difesa: {{pokemon[2].difesa}}</p>
+                <p>- velocità: {{pokemon[2].velocita}}</p>
+                <br>
+                <br>
                 <br>
                 <br>
                 <br>
@@ -130,12 +143,5 @@
     </div>
     </div>
     <br>
-    
-    
-    
-
 
 </ng-template>
-
-
-
