@@ -1,25 +1,25 @@
-.button1{
+.azzurro{
     position: absolute;
     top: 90%;
     background-color: lightsteelblue;
     border: solid;
     border-radius: 10px;
 }
-.button2{
+.grigio{
     position: absolute;
     top: 90%;
     background-color: gray;
     border: solid;
     border-radius: 10px;
 }
-.button3{
+.oro{
     position: absolute;
     top: 90%;
     background-color: goldenrod;
     border: solid;
     border-radius: 10px;
 }
-.button4{
+.home{
     position: absolute;
     top: 80%;
     background-color: blue;
